@@ -16,6 +16,7 @@ import org.bouncycastle.operator.ContentSigner;
 import org.bouncycastle.operator.jcajce.JcaContentSignerBuilder;
 import org.springframework.stereotype.Service;
 import ru.gostsign.model.SignRequest;
+import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -92,8 +93,9 @@ public class GostSignService {
                 zip.write(cert.getEncoded());
                 zip.closeArchiveEntry();
                 // Приватный ключ (PKCS#8 DER)
+                byte[] pkcs8 = keyPair.getPrivate().getEncoded();
                 zip.putArchiveEntry(new ZipArchiveEntry("private_key.der"));
-                zip.write(keyPair.getPrivate().getEncoded());
+                zip.write(pkcs8);
                 zip.closeArchiveEntry();
             }
             return baos.toByteArray();
