@@ -77,14 +77,14 @@ public class GostSignService {
                     .getCertificate(certBuilder.build(signer));
 
             // 4. Подписываем сообщение ГОСТ-алгоритмом через BouncyCastle
-            String message = "Подпись является усиленной неквалифицированной";
-            Signature signature = Signature.getInstance("GOST3411WITHECGOST3410-2012-256", "BC");
-            signature.initSign(keyPair.getPrivate());
-            signature.update(message.getBytes(StandardCharsets.UTF_8));
-            byte[] signBytes = signature.sign();
-            String signBase64 = Base64.getEncoder().encodeToString(signBytes);
+            // String message = "Подпись является усиленной неквалифицированной";
+            // Signature signature = Signature.getInstance("GOST3411WITHECGOST3410-2012-256", "BC");
+            // signature.initSign(keyPair.getPrivate());
+            // signature.update(message.getBytes(StandardCharsets.UTF_8));
+            // byte[] signBytes = signature.sign();
+            // String signBase64 = Base64.getEncoder().encodeToString(signBytes);
 
-            // 5. Архивируем сертификат, ключ и подпись
+            // 5. Архивируем сертификат и ключ
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
             try (ZipArchiveOutputStream zip = new ZipArchiveOutputStream(baos)) {
                 // Сертификат
@@ -94,10 +94,6 @@ public class GostSignService {
                 // Приватный ключ (PKCS#8 DER)
                 zip.putArchiveEntry(new ZipArchiveEntry("private_key.der"));
                 zip.write(keyPair.getPrivate().getEncoded());
-                zip.closeArchiveEntry();
-                // Подпись (Base64)
-                zip.putArchiveEntry(new ZipArchiveEntry("signature.sig"));
-                zip.write(signBase64.getBytes(StandardCharsets.UTF_8));
                 zip.closeArchiveEntry();
             }
             return baos.toByteArray();
