@@ -1,0 +1,4 @@
+ru\gostsign\Application.class
+ru\gostsign\controller\SignController.class
+ru\gostsign\service\GostSignService.class
+ru\gostsign\model\SignRequest.class

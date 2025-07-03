@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_10">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="jdk" jdkName="10" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-coyote:9.0.30" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-servlet-api:9.0.30" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-jni:9.0.30" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-juli:9.0.30" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-util:9.0.30" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: ru.crypto:JCP:2.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: ru.crypto:ASN1P:2.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.objsys:asn1rt:5.74.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: net.sf.proguard:proguard:6.0.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: ru.crypto:cpSSL:2.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: ru.crypto:JCPRevTools:2.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: ru.crypto:JCSP:2.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: ru.crypto:JCPRevCheck:2.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: ru.crypto:JCryptoP:2.5" level="project" />
+  </component>
+</module>
