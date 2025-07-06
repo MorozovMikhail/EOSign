@@ -13,4 +13,10 @@ public class SignRequest {
     private String email;
     private String inn;
     private String ogrn;
+    
+    // Поля для динамических данных штампа
+    private String stampOrganizationName;
+    private String stampDirector;
+    private String stampInn;
+    private String stampValidityPeriod;
 } 

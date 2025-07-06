@@ -1,5 +1,13 @@
 C:\Users\Mikhail Morozov\IdeaProjects\untitled\src\main\java\ru\gostsign\Application.java
 C:\Users\Mikhail Morozov\IdeaProjects\untitled\src\main\java\ru\gostsign\controller\SignController.java
 C:\Users\Mikhail Morozov\IdeaProjects\untitled\src\main\java\ru\gostsign\model\CertRequestDto.java
+C:\Users\Mikhail Morozov\IdeaProjects\untitled\src\main\java\ru\gostsign\model\DocumentSignRequest.java
 C:\Users\Mikhail Morozov\IdeaProjects\untitled\src\main\java\ru\gostsign\model\SignRequest.java
+C:\Users\Mikhail Morozov\IdeaProjects\untitled\src\main\java\ru\gostsign\model\StampField.java
+C:\Users\Mikhail Morozov\IdeaProjects\untitled\src\main\java\ru\gostsign\model\VerificationRequest.java
+C:\Users\Mikhail Morozov\IdeaProjects\untitled\src\main\java\ru\gostsign\model\VerificationResult.java
+C:\Users\Mikhail Morozov\IdeaProjects\untitled\src\main\java\ru\gostsign\service\GostSignatureService.java
 C:\Users\Mikhail Morozov\IdeaProjects\untitled\src\main\java\ru\gostsign\service\GostSignService.java
+C:\Users\Mikhail Morozov\IdeaProjects\untitled\src\main\java\ru\gostsign\service\PdfBoxGostSignService.java
+C:\Users\Mikhail Morozov\IdeaProjects\untitled\src\main\java\ru\gostsign\service\PdfSignService.java
+C:\Users\Mikhail Morozov\IdeaProjects\untitled\src\main\java\ru\gostsign\service\TestPdfGenerator.java

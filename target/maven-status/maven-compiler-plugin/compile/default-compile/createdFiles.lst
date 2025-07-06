@@ -1,5 +1,13 @@
+ru\gostsign\model\StampField.class
+ru\gostsign\service\GostSignService.class
+ru\gostsign\model\SignRequest.class
+ru\gostsign\service\GostSignatureService.class
+ru\gostsign\service\TestPdfGenerator.class
+ru\gostsign\model\VerificationResult.class
+ru\gostsign\service\PdfSignService.class
+ru\gostsign\model\CertRequestDto.class
+ru\gostsign\model\VerificationRequest.class
 ru\gostsign\Application.class
 ru\gostsign\controller\SignController.class
-ru\gostsign\service\GostSignService.class
-ru\gostsign\model\CertRequestDto.class
-ru\gostsign\model\SignRequest.class
+ru\gostsign\model\DocumentSignRequest.class
+ru\gostsign\service\PdfBoxGostSignService.class
